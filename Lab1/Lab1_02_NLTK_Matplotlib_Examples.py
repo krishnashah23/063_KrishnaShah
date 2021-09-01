@@ -20,15 +20,14 @@ fig = plt.figure(figsize=(5,5))
 labels = 'positive_tweets','negative_tweets'
 value_positive = len(pos_tweet)
 value_negative = len(neg_tweet)
-#value_positive = 1000
-#value_negative = 2020
-#sizes = [value_positive,value_negative]
-#plt.pie(sizes,labels=labels,autopct='%.2f%%')
-#plt.axis('equal')
-#plt.show()
+value_positive = 1000
+value_negative = 2020
+sizes = [value_positive,value_negative]
+plt.pie(sizes,labels=labels,autopct='%.2f%%')
+plt.axis('equal')
+plt.show()
 print('\033[95m' + pos_tweet[random.randint(0,5000)])
 print('\033[91m' + neg_tweet[random.randint(0,5000)])
-
 tweet = pos_tweet[2277]
 print(tweet)
 nltk.download('stopwords')
